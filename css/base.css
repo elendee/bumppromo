@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+div, p, span, input, textarea{
+    box-sizing: border-box;
+}
+
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    font-size: 0px;
+    text-align: center;
+}
+.column{
+    font-size: initial;
+    display: inline-block;
+/*     text-align: left; */
+    vertical-align: top;
+    width: 100%;
+}
+
