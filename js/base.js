@@ -31,8 +31,8 @@ const build_use_link = use => {
 	const item = document.createElement('div')
 	item.classList.add('use-case')
 	const link = document.createElement('a')
-	link.href = env.APP_ROOT + '/' + use.href
-	item.innerHTML = use.title
+	link.href = env.APP_ROOT + 'use-cases/' + use.href
+	link.innerHTML = use.title
 	item.appendChild( link )
 	return item
 
