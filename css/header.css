@@ -20,4 +20,33 @@
     display: inline-block;
     padding: 10px;
     margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+/*     border: 1px solid; */
+}
+
+.nav-item ul{
+    position: absolute;
+    z-index: 9;
+    top: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    left: 0px;
+    margin-left: 0;
+    padding-left: 0;
+/*     border: 1px solid; */
+
+}
+.nav-item:hover ul,
+.nav-item ul:hover{
+    top: 18px;
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.nav-item .use-case{
+    background: white;
+    padding: 10px 20px;
+
 }
