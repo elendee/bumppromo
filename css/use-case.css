@@ -28,4 +28,7 @@
     .use-case-steps{
        padding-left: 0%;
     }
+    .use-case-lead{
+        padding-left: 0px;
+    }
 }
