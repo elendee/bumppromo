@@ -1,3 +1,12 @@
+.dev-alert{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: rotate(-2deg);
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
 .bump-green-bg{
     background: #2BBA9B;
 }
@@ -163,3 +172,4 @@ img{
         margin: 20px 0;
     }
 }
+
