@@ -1,11 +1,40 @@
 /*asdf*/
 
 .info.column{
-    width: 40%;
-    border: 1px solid;
+    width: 60%;
+/*     border: 1px solid grey; */
 }
 .media.column{
-    width: 60%;
-    border: 1px solid;
+    width: 40%;
+/*     border: 1px solid lightgrey; */
 }
 
+.info-items h3{
+    color: black;
+}
+
+.info-items .info{
+    position: relative;
+    text-align: left;
+    padding: 20px 20px 20px 30px;
+}
+.info-items .info ul,
+.info-items .info p{
+    font-size: .9rem;
+}
+.info-items .info ul{
+    padding-left: 35px;
+}
+
+.info-items .call-to-action{
+    margin: 50px 0 30px 0;
+}
+
+.info-items .media img{
+    max-width: 50%;
+    max-height: 200px;
+}
+
+.info-items .media .flex-wrapper{
+    justify-content: space-around;
+}
