@@ -15,7 +15,6 @@ body{
 
 a{
     text-decoration: none;
-/*     color: #2bba9c; */
 }
 
 ul{
@@ -29,6 +28,7 @@ div, p, span, input, textarea{
 
 img{
     max-width: 100%;
+    align-self: center;
 }
 
 .flex-wrapper{
@@ -44,24 +44,33 @@ img{
 .column{
     font-size: initial;
     display: inline-block;
-/*     text-align: left; */
     vertical-align: top;
     width: 100%;
 }
-
+.column-2{
+    max-width: 50%;
+}
+.column-3{
+    max-width: 33%;
+}
+.column-4{
+    max-width: 25%;
+}
 .bump-container{
     text-align: center;
 }
 .bump-constrain{
+    position: relative;
     display: inline-block;
     width: 100%;
     max-width: 1400px;
     text-align: left;
+    padding: 10px;
 }
 
 .bump-section{
-    padding: 40px 0;
-    border: 1px solid red;
+    padding-top: 40px;
+/*     border: 1px solid red; */
 }
 
 .center{
@@ -76,4 +85,51 @@ img{
     border-radius: 5px;
     border: 3px solid #71d1bc;
     color: #71d1bc;
+    transition: .2s;
+}
+
+.call-to-action:hover{
+    background: #71d1bc;
+    color: white;
+}
+
+
+
+.footer{
+    text-align: left;
+}
+.footer .logo{
+    text-align: left;
+
+}
+.footer .logo img{
+    max-width: 120px;
+}
+.footer h4,
+.footer ul,
+.footer a{
+    text-align: left;
+    color: #8f8f8f;
+}
+.footer ul{
+    padding-left: 10px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer .row{
+    justify-content: space-between;
+    padding: 0 3%
+}
+.footer-column{
+    font-size: initial;
+}
+
+.attribution{
+    padding-left: 3%;
+    font-size: 1.1rem;
+}
+.attribution .copyright{
+    font-size: 1.5rem;
+    vertical-align: middle;
 }

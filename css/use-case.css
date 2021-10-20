@@ -1,9 +1,8 @@
 /*asdf*/
 
 .use-case-lead{
-/*     padding-right: 60%; */
     padding-left: 10%;
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
 }
 .use-case-lead h2{
     margin-left: -10%;
@@ -11,7 +10,6 @@
 
 .use-case-steps{
     padding-left: 45%;
-/*     padding-right: 5%; */
 }
 
 .use-case-steps .step{

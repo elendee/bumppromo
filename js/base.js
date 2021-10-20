@@ -5,6 +5,8 @@ const links = document.querySelectorAll('a')
 const header = document.querySelector('#header')
 const nav_items = header.querySelectorAll('.nav-item')
 
+const nav_toggle = header.querySelector('.nav-item.toggle')
+
 const locale = location.href.match(/localhost/) || location.href.match(/resource.oko/) ? 'dev' : 'live'
 
 
@@ -61,3 +63,18 @@ for( const link of links ){
 		link.href = env.APP_ROOT + split[ split.length -1 ]
 	}
 }
+
+nav_toggle.addEventListener('click', () => {
+	nav_items.forEach( ele => {
+		ele.classList.toggle('toggled')
+	})
+})
+
+
+document.addEventListener('scroll', e => {
+	if( window.pageYOffset > 50 ){
+		document.body.classList.add('scrolled')
+	}else{
+		document.body.classList.remove('scrolled')
+	}
+})
