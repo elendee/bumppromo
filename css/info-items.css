@@ -38,3 +38,9 @@
 .info-items .media .flex-wrapper{
     justify-content: space-around;
 }
+
+@media screen and (max-width: 750px){
+    .info.column{
+        width: auto;
+    }
+}
