@@ -96,6 +96,7 @@
 @media screen and ( max-width: 750px ){
     #nav{
         z-index: 99;
+        left: 0;
 /*         border: 2px solid yellow; */
         width: 100%;
         height: auto;
@@ -128,9 +129,12 @@
         transition: .2s;
         pointer-events: initial;
         background: white;
+        width: 100%;
+        margin-left: 0;
     }
     .nav-item:last-of-type{
         border-bottom: 3px solid rgba(0, 0, 0, .6);
+        padding-bottom: 30px;
     }
     .nav-item.toggled{
         transform: translate( 0, 0 );
