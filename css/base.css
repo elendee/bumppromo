@@ -1,8 +1,9 @@
 .bump-green-bg{
-    background: #71d1bc;
+    background: #2BBA9B;
 }
+
 .bump-green-color{
-    color: #71d1bc;
+    color: #2BBA9B;
 }
 
 *{
@@ -83,13 +84,13 @@ img{
     font-size: 1.5rem;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 3px solid #71d1bc;
-    color: #71d1bc;
+    border: 3px solid #2BBA9B;
+    color: #2BBA9B;
     transition: .2s;
 }
 
 .call-to-action:hover{
-    background: #71d1bc;
+    background: #2BBA9B;
     color: white;
 }
 
@@ -100,6 +101,7 @@ img{
 }
 .footer .logo{
     text-align: left;
+    padding-top: 15px;
 
 }
 .footer .logo img{
@@ -119,7 +121,8 @@ img{
 }
 .footer .row{
     justify-content: space-between;
-    padding: 0 3%
+    padding: 0 3%;
+    align-items: flex-start;
 }
 .footer-column{
     font-size: initial;
@@ -132,4 +135,31 @@ img{
 .attribution .copyright{
     font-size: 1.5rem;
     vertical-align: middle;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px){
+    .footer{
+        background: #efefef;
+    }
+    .footer .row{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-column{
+        width: 100%;
+        text-align: center;
+    }
+    .footer h4,
+    .footer ul,
+    .footer a,
+    .footer .logo,
+    .attribution{
+        text-align: center;
+    }
+    .attribution{
+        margin: 20px 0;
+    }
 }

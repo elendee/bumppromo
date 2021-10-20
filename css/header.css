@@ -63,7 +63,7 @@
     transition: .2s;
     left: 0px;
     padding-top: 40px;
-    border-left: 3px solid #71d1bc;
+    border-left: 3px solid #2BBA9B;
 /*     background: pink; */
     min-width: 100%;
 }
@@ -81,7 +81,7 @@
 }
 
 .nav-item .use-case:hover{
-    background: #71d1bc;
+    background: #2BBA9B;
 }
 .nav-item .use-case:hover a{
     color: white;
@@ -110,7 +110,7 @@
         background: #efefef;
     }
     #nav .nav-item ul div:hover{
-        background: #71d1bc;
+        background: #2BBA9B;
     }
     .nav-item.toggle{
         display: block;
@@ -147,11 +147,11 @@
     }
     .nav-item.admin{
         background: white;
-        color: #71d1bc;
+        color: #2BBA9B;
         border-radius: 0px;
     }
     .nav-item.admin a{
-        color: #71d1bc;
+        color: #2BBA9B;
     }
     #logo{
         z-index: 999;

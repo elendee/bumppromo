@@ -1,4 +1,4 @@
-import env from './env.js?v=3'
+import env from './env.js?v=5'
 
 const links = document.querySelectorAll('a')
 
