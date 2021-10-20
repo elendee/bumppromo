@@ -28,9 +28,8 @@
 
 #nav{
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
-/*     float: right; */
     height: 70px;
 /*     border: 1px solid blue; */
 }

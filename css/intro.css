@@ -28,6 +28,9 @@
 
 .intro .column:nth-of-type(2) .flex-wrapper{
     height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 /*     border: 2px solid yellow; */
 }
 
