@@ -131,7 +131,7 @@
         display: initial;
     }
     .nav-item{
-        transform: translate( -100vw, 0 );
+        transform: translate( -120vw, 0 );
         padding: 20px;
         display: block;
         text-align: center;
