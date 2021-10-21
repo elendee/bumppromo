@@ -130,7 +130,7 @@ img{
 }
 .footer .row{
     justify-content: space-between;
-    padding: 0 3%;
+/*     padding: 0 3%; */
     align-items: flex-start;
 }
 .footer-column{

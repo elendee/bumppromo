@@ -28,7 +28,7 @@
 
 #nav{
     position: absolute;
-    right: 10px;
+    right: 180px;
     top: 0;
     height: 70px;
 /*     border: 1px solid blue; */
@@ -39,6 +39,7 @@
     padding: 10px;
     margin: 0 5px;
     cursor: pointer;
+
 /*     border: 1px solid; */
 }
 .nav-item a{
@@ -48,6 +49,7 @@
 .nav-item.admin{
     border-radius: 6px;
     padding: 8px 12px;
+    margin-left: 30px;
 }
 .nav-item.admin a{
     font-weight: bold;
@@ -62,8 +64,7 @@
     pointer-events: none;
     transition: .2s;
     left: 0px;
-    padding-top: 40px;
-    border-left: 3px solid #2BBA9B;
+    padding-top: 20px;
 /*     background: pink; */
     min-width: 100%;
 }
@@ -72,12 +73,14 @@
     top: 20px;
     pointer-events: initial;
     opacity: 1;
-    background: rgb(240, 240, 240 );
+/*     background: rgb(240, 240, 240 ); */
 }
 
 .nav-item .use-case{
     background: white;
     padding: 10px 20px;
+    border-left: 3px solid #2BBA9B;
+    
 }
 
 .nav-item .use-case:hover{
@@ -91,6 +94,12 @@
     display: none;
     user-select: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    #nav{
+        right: 100px;
+    }
 }
 
 @media screen and ( max-width: 750px ){
@@ -158,3 +167,5 @@
         max-width: 100px;
     }
 }
+
+
