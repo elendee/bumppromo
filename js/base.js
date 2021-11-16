@@ -71,17 +71,19 @@ const rand_range = ( min, max ) => {
 	return min + rand
 }
 
-setInterval(() => {
-	for( const path of paths ){
-		path.style.transform = 'scaleX(' + rand_range( .95, 1 ) + ') scaleY(' + rand_range( .95, 1 ) + ')'
-		// let string = path.getAttribute('d').split(' ').map( point => {
-		// 	if( point.match(/[a-zA-Z]/ ) ) return point
-		// 	point = Number( point ) + ( ( Math.random() * 10 ) - 5 )
-		// 	return point
-		// })
-		// path.setAttribute('d', string.join(' ') )
-	}
-},1500 )
+if( paths && paths.length ){
+	setInterval(() => {
+		for( const path of paths ){
+			path.style.transform = 'scaleX(' + rand_range( .95, 1 ) + ') scaleY(' + rand_range( .95, 1 ) + ')'
+			// let string = path.getAttribute('d').split(' ').map( point => {
+			// 	if( point.match(/[a-zA-Z]/ ) ) return point
+			// 	point = Number( point ) + ( ( Math.random() * 10 ) - 5 )
+			// 	return point
+			// })
+			// path.setAttribute('d', string.join(' ') )
+		}
+	},1500 )
+}
 
 nav_toggle.addEventListener('click', () => {
 	nav_items.forEach( ele => {
