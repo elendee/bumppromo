@@ -4,12 +4,14 @@ const links = document.querySelectorAll('a')
 
 const header = document.querySelector('#header')
 const nav_items = header.querySelectorAll('.nav-item')
+const nav_toggle = header.querySelector('.nav-item.toggle')
 
 const paths = document.querySelectorAll('#hero-image svg path')
 
-const nav_toggle = header.querySelector('.nav-item.toggle')
+const point_homes = document.querySelectorAll('.nav-item[data-point-home=true]')
 
 const locale = location.href.match(/localhost/) || location.href.match(/resource.oko/) ? 'dev' : 'live'
+
 
 
 const add_cases = item => {
@@ -84,6 +86,13 @@ if( paths && paths.length ){
 		}
 	},1500 )
 }
+
+if( point_homes && point_homes.length ){
+	for( const point of point_homes ){
+		point.href = env.APP_ROOT
+	}
+}
+
 
 nav_toggle.addEventListener('click', () => {
 	nav_items.forEach( ele => {

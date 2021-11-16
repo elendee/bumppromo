@@ -41,28 +41,33 @@
 }
 
 
-#hero-image{
+#hero-image,
+#hero-image-no-anim{
     position: relative;
-/*     border: 1px solid; */
     height: 50vw;
     transform: rotate(5deg);
+    width: 100%;
+/*     max-width: 100%; */
 }
-#hero-image svg{
+#hero-image svg,
+#hero-image-no-anim svg{
     position: absolute;
     width: 100%;
     left: 0;
 }
-#hero-image path{
-	transition: 3s;
-}
-#hero-image div{
+#hero-image div,
+#hero-image-no-anim div{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+#hero-image div{
     animation: wobble 2s infinite ease-in;
-    overflow: visible;
+}
+#hero-image path{
+	transition: 3s;
 }
 
 
