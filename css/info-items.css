@@ -2,10 +2,14 @@
 
 .info.column{
     width: 60%;
+    vertical-align: middle;
 /*     border: 1px solid grey; */
 }
 .media.column{
     width: 40%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
 /*     border: 1px solid lightgrey; */
 }
 
