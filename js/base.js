@@ -60,11 +60,13 @@ for( const item of nav_items ){
 }
 
 
-// rewrite links to environment
-for( const link of links ){
-	if( locale === 'dev' && link.href ){
-		const split = link.href.split('/')
-		link.href = env.APP_ROOT + split[ split.length -1 ]
+// dev rewrite links to environment
+if( locale === 'dev' ){
+	for( const link of links ){
+		if( link.href && !link.href.match(/bumpyourbus/i) ){
+			const split = link.href.split('/')
+			link.href = env.APP_ROOT + split[ split.length -1 ]
+		}
 	}
 }
 

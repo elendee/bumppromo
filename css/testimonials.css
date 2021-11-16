@@ -7,3 +7,6 @@
     width: calc( 100% - 320px )
 }
 
+.testimonials .column{
+    vertical-align: middle;
+}
