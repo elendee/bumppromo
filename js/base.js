@@ -5,6 +5,8 @@ const links = document.querySelectorAll('a')
 const header = document.querySelector('#header')
 const nav_items = header.querySelectorAll('.nav-item')
 
+const paths = document.querySelectorAll('#hero-image svg path')
+
 const nav_toggle = header.querySelector('.nav-item.toggle')
 
 const locale = location.href.match(/localhost/) || location.href.match(/resource.oko/) ? 'dev' : 'live'
@@ -63,6 +65,23 @@ for( const link of links ){
 		link.href = env.APP_ROOT + split[ split.length -1 ]
 	}
 }
+
+const rand_range = ( min, max ) => {
+	const rand = Math.random() * ( max - min )
+	return min + rand
+}
+
+setInterval(() => {
+	for( const path of paths ){
+		path.style.transform = 'scaleX(' + rand_range( .95, 1 ) + ') scaleY(' + rand_range( .95, 1 ) + ')'
+		// let string = path.getAttribute('d').split(' ').map( point => {
+		// 	if( point.match(/[a-zA-Z]/ ) ) return point
+		// 	point = Number( point ) + ( ( Math.random() * 10 ) - 5 )
+		// 	return point
+		// })
+		// path.setAttribute('d', string.join(' ') )
+	}
+},1500 )
 
 nav_toggle.addEventListener('click', () => {
 	nav_items.forEach( ele => {

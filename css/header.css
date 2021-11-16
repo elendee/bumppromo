@@ -44,15 +44,15 @@
 }
 .nav-item a{
     color: #454545;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .nav-item.admin{
     border-radius: 6px;
-    padding: 8px 12px;
+    padding: 6px 12px;
     margin-left: 30px;
 }
 .nav-item.admin a{
-    font-weight: bold;
+/*     font-weight: bold; */
     color: white;
 }
 

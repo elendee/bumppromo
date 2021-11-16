@@ -1,3 +1,4 @@
 .*
 !.gitignore
 js/env.js
+_storage/

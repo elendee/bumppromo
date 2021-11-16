@@ -1,3 +1,4 @@
+
 .dev-alert{
     position: absolute;
     top: 10%;
@@ -5,6 +6,11 @@
     transform: rotate(-2deg);
     display: inline-block;
     font-size: 1.2rem;
+}
+
+h1{
+    font-size: 2.4rem;
+/*     font-size: clamp(2.5rem,3.5vw,6rem); */
 }
 
 .bump-green-bg{
@@ -16,7 +22,8 @@
 }
 
 *{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 body{
@@ -33,7 +40,8 @@ ul{
 
 div, p, span, input, textarea{
     box-sizing: border-box;
-    color: #454545;
+/*     color: #454545; */
+    color: #434343;
 }
 
 img{
@@ -73,7 +81,7 @@ img{
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 1400px;
+    max-width: 83%;
     text-align: left;
     padding: 10px;
 }
@@ -170,6 +178,9 @@ img{
     }
     .attribution{
         margin: 20px 0;
+    }
+    .bump-constrain{
+        max-width: 100%;
     }
 }
 
